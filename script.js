@@ -74,3 +74,18 @@ function removeCharter (inputString, charsToRemove){
 }
 let resultat = removeCharter(" hello world", ['l', 'd']);
 console.log(resultat);
+
+
+// Task 18========================================================
+
+function isNumberDegree(num, degree){
+if(degree === 0){
+    return 1;
+};
+if(degree === 1){
+    return num;
+};
+
+return num * isNumberDegree(num, degree - 1);
+};
+console.log(isNumberDegree(2, 3));
